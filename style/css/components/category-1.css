@@ -1,0 +1,13 @@
+.category-banner {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-title {
+  font-weight: 450;
+  font-size: 30px;
+  line-height: 38px;
+  color: #5D71DD;
+}

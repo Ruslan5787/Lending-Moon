@@ -1,0 +1,142 @@
+.error__wrapper {
+  text-align: center;
+  margin: 125px 0;
+}
+.error img {
+  margin-bottom: 40px;
+}
+.error__title {
+  font-size: 30px;
+  line-height: 38px;
+  color: #2f2222;
+  margin-bottom: 40px;
+}
+
+.link-back {
+  padding: 10px 16px 10px 34px;
+  background: rgba(93, 113, 221, 0.05);
+  border-radius: 8px;
+  color: #5d71dd;
+  position: relative;
+  transition: all 0.3s;
+}
+.link-back::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../../image/icon-arrow-left-2.svg);
+  width: 6px;
+  height: 10px;
+  left: 16px;
+  bottom: 17px;
+}
+.link-back:hover {
+  background: rgba(93, 113, 221, 0.15);
+}
+
+.close {
+  color: #2f2222;
+  position: relative;
+  padding-right: 18px;
+}
+.close::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url(../../../image/icon-close.svg);
+  right: 0;
+  bottom: 5px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+.search__wrapper {
+  margin-top: 80px;
+  padding: 25px 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 80px auto;
+}
+.search__fild {
+  width: 744px;
+  height: 50px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  border: none;
+  padding: 0 15px 0 40px;
+  margin-right: 20px;
+}
+.search__btn {
+  background: #5d71dd;
+  border-radius: 20px;
+  padding: 13px 90px 13px 60px;
+  position: relative;
+  color: #FFF;
+}
+.search__btn::after {
+  content: '';
+  position: absolute;
+  background-image: url(../../../image/icon-search.svg);
+  width: 20px;
+  height: 20px;
+  right: 60px;
+  bottom: 14px;
+}
+
+.results-category__title {
+  font-size: 30px;
+  line-height: 38px;
+  color: #2F2222;
+}
+.results-container {
+  max-width: 1040px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.results-pagination {
+  padding-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+  .search__fild {
+    width: 544px;
+  }
+}
+@media (max-width: 1024px) {
+  .error__wrapper {
+    margin: 75px 0;
+  }
+}
+@media (max-width: 900px) {
+  .search__fild {
+    width: 344px;
+  }
+}
+@media (max-width: 700px) {
+  .search__fild {
+    width: 230px;
+  }
+
+  .search__btn {
+    padding: 13px 60px 13px 45px;
+  }
+  .search__btn::after {
+    right: 31px;
+  }
+}
+@media (max-width: 514px) {
+  .search__wrapper {
+    margin: 80px auto;
+    padding: 25px 20px;
+  }
+
+  .search__form {
+    text-align: center;
+  }
+
+  .search__fild {
+    margin-bottom: 20px;
+  }
+}
